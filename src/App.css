@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.bodyFooter {
+  background-color: #222b4d;
+  p {
+    color: #ffffff;
+  }
+}
+#App-header {
+  background-color: #141b37;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%; /* <-- Ensure it stretches */
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow-x: hidden; /* Optional: Prevent horizontal scrollbars */
+}
+textArea#wallets.txtArea {
+  resize: none;
+  display: block;
+  padding: 0.625rem; /* p-2.5 */
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem; /* text-sm */
+  color: #ffffff; /* text-gray-900 */
+  background-color: #1b1f31; /* bg-gray-50 */
+  border-radius: 0.5rem; /* rounded-lg */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  column-gap: 2px;
+}
+textArea#wallets.txtArea:focus {
+  outline: none;
+  ring: 1px solid #3bc1f6; /* focus:ring-blue-500 (approx) */
+  border-color: #3bc1f6; /* focus:border-blue-500 */
+}
+.App-link {
+  color: #61dafb;
+}
+p {
+  text-align: center;
+  padding: 2rem;
+}
+h1 {
+  padding: 1rem;
+}
+.tableWrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  min-width: 600px; /* Causes horizontal scroll on small screens */
+  border-collapse: collapse;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  white-space: nowrap; /* Prevents cell text from wrapping */
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+    min-width: 500px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+}
+
+tr:nth-child(even) {
+  background-color: #110729;
+}
+.btn {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: none;
+  border: 2px solid #646cff;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glitch {
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+}
+
+.glitch:hover {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    transform: translate(4px, 4px);
+  }
+  80% {
+    transform: translate(4px, -4px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.modal h2,
+.modal h3,
+.modal p {
+  word-wrap: break-word;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .modal h2 {
+    font-size: 1rem;
+  }
+
+  .modal h3 {
+    font-size: 0.9rem;
+  }
+
+  .modal p {
+    font-size: 0.85rem;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
